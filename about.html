@@ -14,7 +14,7 @@
     <!-- BEGIN HEAD -->
     <head>
         <meta charset="utf-8"/>
-        <title>Metronic "Asentus" Frontend Freebie</title>
+        <title>About Us</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="" name="description"/>
@@ -24,6 +24,17 @@
         <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
         <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+        <link rel="stylesheet" href="css/custom.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+              $('.flexslider').flexslider({
+                animation: Modernizr.touch ? "slide" : "fade"
+              });
+            });
+        </script>                                                                                              
 
         <!-- PAGE LEVEL PLUGIN STYLES -->
         <link href="css/animate.css" rel="stylesheet">
@@ -54,7 +65,7 @@
 
                         <!-- Logo -->
                         <div class="logo">
-                            <a class="logo-wrap" href="index.html" style="background: white;">
+                            <a class="logo-wrap" href="index.html";>
                                 <img class="logo-img logo-img-main" src="img/fonics logo.png" alt="Asentus Logo">
                                 <img class="logo-img logo-img-active" src="img/fonics logo.png" alt="Asentus Logo">
                             </a>
@@ -66,9 +77,8 @@
                     <div class="collapse navbar-collapse nav-collapse">
                         <div class="menu-container">
                             <ul class="navbar-nav navbar-nav-right">
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="pricing.html">Pricing</a></li>
-                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="about.html">About</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="about.html">About</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="products.html">Products</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="faq.html">FAQ</a></li>
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover" href="contact.html">Contact</a></li>
@@ -83,7 +93,11 @@
         <!--========== END HEADER ==========-->
 
         <!--========== PARALLAX ==========-->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/About-image.png">
+        <div class="parallax-window" data-parallax="scroll" style="background:radial-gradient(
+            circle,
+            rgba(150, 100, 225, 1) 17%,
+            rgba(165, 124, 175, 1) 80%
+          );" >
             <div class="parallax-content container">
                 <h1 class="carousel-title">About Us</h1>
             </div>
@@ -107,7 +121,7 @@
             <div class="row">
                 <div class="col-sm-7 sm-margin-b-50">
                     <div class="margin-b-30">
-                        <p>Fonics, An ISO 9001-2008 Certified Company is based in Hyderabad, India. Since its 
+                        <p>Fonics, An ISO 9001-2008 Certified Company is based in Bangalore, India. Since its 
                             incorporation in the year 2011 
                             has been mainly concentrated on the animal feed additives. With regular R&D in the areas 
                             of Aqua Culture, Poultry, Dairy, Piggery and Agriculture had developed quality products 
@@ -132,7 +146,19 @@
                         and Enzymes at affordable price through innovative and eco friendly techniques.</p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
-                    <img class="img-responsive" src="img/640x380/01.jpg" alt="Our Office">
+                    <div class="flexslider">
+                        <ul class="slides">
+                          <li>
+                            <img src="img/aqua-sagu.jpeg" />
+                          </li>
+                          <li>
+                            <img src="img/aqua-sagu.jpeg" />
+                          </li>
+                          <li>
+                            <img src="img/Digital-Micro.png" />
+                          </li>
+                        </ul>
+                      </div>
                 </div>
             </div>
             <!--// end row -->
@@ -140,7 +166,7 @@
         <!-- End About -->
 
         <!-- Service -->
-        <div class="bg-color-sky-light" data-auto-height="true">
+        <div class="bg-color-sky-light" style="background: #9664e1"; data-auto-height="true">
             <div class="content-lg container">
                 <div class="row row-space-1 margin-b-2">
                     <div class="col-sm-4 sm-margin-b-2">
@@ -243,6 +269,71 @@
             </div>
         </div>
         <!-- End Service -->
+        <div class="content-lg container">
+            <div class="row">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><b>Mission</b></button>
+                    <button class="tablinks" onclick="openCity(event, 'Paris')"><b>Vision</b></button>
+                    <button class="tablinks" onclick="openCity(event, 'Tokyo')"><b>Values</b></button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="London" class="tabcontent">
+                    <h3>Mission</h3>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <img src="img/mission.png" class="Core" alt="Mission of Fonics">
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <p style="color: black;">Our mission is to introduce the widest range of formulations meeting highest standards of 
+                                quality and to develop deep markets across the globe with a long-term approach.</p>
+                                <ul style="color: black;">
+                                    <li><span><i class="fas fa-check-circle"></i></span> Increasing clientele.</li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> Long-terms approach. </li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> Maintaing ethical standards at each step.</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div id="Paris" class="tabcontent">
+                    <h3>Vision</h3>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <img src="img/vision.png" class="Core" alt="Mission of Fonics">
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <p style="color: black;">To become the leading player in the industry by assuring high quality standards and 
+                                cost effective products at all times.</p>
+                                <ul style="color: black;">
+                                    <li><span><i class="fas fa-check-circle"></i></span> Cost Effective.</li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> Fortune 500. </li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> Building Trust.</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="Tokyo" class="tabcontent">
+                    <h3>Values</h3>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <img src="img/client.png" class="Core" alt="Mission of Fonics">
+                        </div>
+                        <div class="col-lg-5 col-md-4 col-12">
+                            <p style="color: black;">In alignment with our mission, our core values are to develop Innovative solutions, 
+                                delivering Safe and Effective products and to perform our duties with extreme honesty and integrity .</p>
+                                <ul style="color: black;">
+                                    <li><span><i class="fas fa-check-circle"></i></span> Committed for values.</li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> High availability.</li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> World-class quality.</li>
+                                    <li><span><i class="fas fa-check-circle"></i></span> Safe.</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mission Values End-->
 
         <!-- Testimonials -->
         <div class="content-lg container">
@@ -291,21 +382,19 @@
                         <div class="col-sm-2 sm-margin-b-50">
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Home</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">About</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Products</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Pricing</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Careers</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Contact Us</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Terms</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="index.html">Home</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="about.html">About</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="products.html">Products</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="contact.html">Contact Us</a></li>
                             </ul>
                             <!-- End List -->
                         </div>
                         <div class="col-sm-4 sm-margin-b-30">
                             <!-- List -->
                             <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a class="footer-list-link" href="#">YouTube</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="https://www.facebook.com/vannamiframs">Facebook</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="https://www.youtube.com/c/techbusiness/videos">YouTube</a></li>
+                                <li class="footer-list-item"><a class="footer-list-link" href="http://aquasagu.blogspot.com/2020/11/problems-in-vannamei-culture.html">Blog</a></li>
                             </ul>
                             <!-- End List -->
                         </div>
@@ -357,9 +446,14 @@
         <script src="vendor/swiper/js/swiper.jquery.min.js" type="text/javascript"></script>
 
         <!-- PAGE LEVEL SCRIPTS -->
+        <script src="js/custom.js"></script>
         <script src="js/layout.min.js" type="text/javascript"></script>
         <script src="js/components/swiper.min.js" type="text/javascript"></script>
         <script src="js/components/wow.min.js" type="text/javascript"></script>
+        <script>
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
 
     </body>
     <!-- END BODY -->
